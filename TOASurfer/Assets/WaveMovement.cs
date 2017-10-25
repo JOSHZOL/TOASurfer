@@ -25,7 +25,7 @@ public class WaveMovement : MonoBehaviour {
 
         while (i < vertices.Length)
         {
-            vertices[i].Set(vertices[i].x, Mathf.Sin((Time.realtimeSinceStartup + (vertices[i].z / 6)) * 3), vertices[i].z);
+            vertices[i].Set(vertices[i].x, Mathf.Sin((Time.realtimeSinceStartup + (vertices[i].z / 12)) * 3), vertices[i].z);
             i++;
         }
 
