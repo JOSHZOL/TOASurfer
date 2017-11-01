@@ -6,6 +6,8 @@ public class WaveMovement : MonoBehaviour {
 
     Rigidbody rb;
 
+    public float waveSpeed;
+
     // Use this for initialization
     void Start ()
     {
@@ -25,10 +27,14 @@ public class WaveMovement : MonoBehaviour {
 
         while (i < vertices.Length)
         {
-            vertices[i].Set(vertices[i].x, Mathf.Sin((Time.realtimeSinceStartup + (vertices[i].z / 12)) * 3), vertices[i].z);
+            vertices[i].Set(vertices[i].x, Mathf.Sin((Time.realtimeSinceStartup + (vertices[i].z / 4)) * waveSpeed + 15.5f) , vertices[i].z);
+           // normals[i].Set();
+
             i++;
         }
 
         mesh.vertices = vertices;
+
+        mesh.RecalculateNormals();
     }
 }

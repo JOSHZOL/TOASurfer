@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour {
     public float PlayerSpeed;
     public float ArrivalDistance;
 
+    public float waveSpeed;
+
     Rigidbody rb;
 
     int lane;
@@ -54,6 +56,6 @@ public class PlayerMovement : MonoBehaviour {
             rb.position = new Vector3(rb.position.x - ((float)(PlayerSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
         }
 
-        rb.position = new Vector3(rb.position.x, Mathf.Sin(Time.realtimeSinceStartup * 3), rb.position.z);
+        rb.position = new Vector3(rb.position.x, Mathf.Sin(Time.realtimeSinceStartup * waveSpeed), rb.position.z);
     }
 }
