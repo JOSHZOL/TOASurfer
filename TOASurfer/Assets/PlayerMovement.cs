@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     public float ArrivalDistance;
 
     public float waveSpeed;
+    public int laneWidth;
 
     Rigidbody rb;
 
@@ -38,20 +39,20 @@ public class PlayerMovement : MonoBehaviour {
 
         previousXAxis = Input.GetAxis("Horizontal");
 
-        if (Mathf.Abs(rb.position.x - (float)(lane * 2)) > ArrivalDistance)
+        if (Mathf.Abs(rb.position.x - (float)(lane * laneWidth)) > ArrivalDistance)
         {
             SpeedMultiplier = 1.0f;
         }
         else
         {
-            SpeedMultiplier = 1.0f * (Mathf.Abs(rb.position.x - (float)(lane * 2)) / ArrivalDistance);
+            SpeedMultiplier = 1.0f * (Mathf.Abs(rb.position.x - (float)(lane * laneWidth)) / ArrivalDistance);
         }
 
-        if ((lane * 2) > rb.position.x)
+        if ((lane * laneWidth) > rb.position.x)
         {
             rb.position = new Vector3(rb.position.x + ((float)(PlayerSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
         }
-        else if ((lane * 2) < rb.position.x)
+        else if ((lane * laneWidth) < rb.position.x)
         {
             rb.position = new Vector3(rb.position.x - ((float)(PlayerSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
         }
