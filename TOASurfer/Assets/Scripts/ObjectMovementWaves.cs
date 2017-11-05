@@ -18,10 +18,13 @@ public class ObjectMovementWaves : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        //rb.position = new Vector3(rb.position.x, rb.position.y, rb.position.z + (ObjectSpeed * Time.deltaTime));
-        
-        //rb.position = new Vector3(rb.position.x, 1.55f * Mathf.Sin((Time.realtimeSinceStartup) * waveSpeed + rb.position.z + 0.5f) - 0.8f, rb.position.z);
+        rb.position = new Vector3(rb.position.x, rb.position.y, rb.position.z + (ObjectSpeed * Time.deltaTime));
 
-        rb.velocity = new Vector3(0, 0, ObjectSpeed);
+        rb.position = new Vector3(rb.position.x, 1.55f * Mathf.Sin((Time.realtimeSinceStartup + (rb.position.z / 10)) * waveSpeed) - 0.8f, rb.position.z);
+
+        if (rb.position.z < -5)
+        {
+            Destroy(gameObject);
+        }
     }
 }

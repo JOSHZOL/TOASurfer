@@ -2,22 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaveMovement : MonoBehaviour {
+public class WaveMovement : MonoBehaviour
+{
+    
+    public float waveSpeed;
 
     Rigidbody rb;
-
-    public float waveSpeed;
+    Matrix4x4 localToWorld;
+ 
 
     // Use this for initialization
     void Start ()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        //rb.position = new Vector3(rb.position.x, Mathf.Sin((Time.realtimeSinceStartup + (rb.position.z / 10)) * 3) - 0.5f, rb.position.z);
+        localToWorld = transform.localToWorldMatrix;
 
         Mesh mesh = GetComponent<MeshFilter>().mesh;
         Vector3[] vertices = mesh.vertices;
@@ -27,7 +31,9 @@ public class WaveMovement : MonoBehaviour {
 
         while (i < vertices.Length)
         {
-            vertices[i].Set(vertices[i].x, 1.55f * Mathf.Sin((Time.realtimeSinceStartup + (vertices[i].z / 4)) * waveSpeed + 15.5f) , vertices[i].z);
+            Vector3 worldPos = localToWorld.MultiplyPoint3x4(vertices[i]);
+
+            vertices[i].Set(vertices[i].x, 1.55f * Mathf.Sin((Time.realtimeSinceStartup + (worldPos.z / 10)) * waveSpeed) , vertices[i].z);
 
             i++;
         }

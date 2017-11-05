@@ -57,6 +57,6 @@ public class PlayerMovement : MonoBehaviour {
             rb.position = new Vector3(rb.position.x - ((float)(PlayerSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
         }
 
-        rb.position = new Vector3(rb.position.x, Mathf.Sin(Time.realtimeSinceStartup * waveSpeed), rb.position.z);
+        rb.position = new Vector3(rb.position.x, Mathf.Sin((Time.realtimeSinceStartup + (rb.position.z / 10)) * waveSpeed), rb.position.z);
     }
 }
