@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 49dcf688cb0af414cb44fa5dcb2fd350
+timeCreated: 1510091625
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Back_cloth_lower
+    100002: Back_cloth_middle
+    100004: Back_cloth_upper
+    100006: Chest
+    100008: Crotch
+    100010: Front_cloth_bottom
+    100012: Front_cloth_middle
+    100014: Front_cloth_upper
+    100016: Head
+    100018: Hip
+    100020: joint2
+    100022: //RootNode
+    100024: Left_ankle
+    100026: Left_arm
+    100028: Left_clavicle
+    100030: Left_elbow
+    100032: Left_feet
+    100034: Left_hand
+    100036: Left_knee
+    100038: Left_leg
+    100040: Left_lower_fingers
+    100042: Left_lower_point
+    100044: Left_lower_thumb
+    100046: Left_mid_point
+    100048: Left_middle_fingers
+    100050: Left_toe
+    100052: Left_upper_fingers
+    100054: Left_upper_point
+    100056: Left_upper_thumb
+    100058: Neck
+    100060: Right_ankle
+    100062: Right_arm
+    100064: Right_clavicle
+    100066: Right_elbow
+    100068: Right_feet
+    100070: Right_hand
+    100072: Right_knee
+    100074: Right_leg
+    100076: Right_lower_fingers
+    100078: Right_lower_point
+    100080: Right_lower_thumb
+    100082: Right_mid_point
+    100084: Right_middle_fingers
+    100086: Right_toe
+    100088: Right_upper_fingers
+    100090: Right_upper_point
+    100092: Right_upper_thumb
+    100094: Root
+    100096: Skull_base
+    100098: SurfBoard
+    100100: surfboard
+    100102: toa
+    100104: Torso
+    100106: Tummy
+    400000: Back_cloth_lower
+    400002: Back_cloth_middle
+    400004: Back_cloth_upper
+    400006: Chest
+    400008: Crotch
+    400010: Front_cloth_bottom
+    400012: Front_cloth_middle
+    400014: Front_cloth_upper
+    400016: Head
+    400018: Hip
+    400020: joint2
+    400022: //RootNode
+    400024: Left_ankle
+    400026: Left_arm
+    400028: Left_clavicle
+    400030: Left_elbow
+    400032: Left_feet
+    400034: Left_hand
+    400036: Left_knee
+    400038: Left_leg
+    400040: Left_lower_fingers
+    400042: Left_lower_point
+    400044: Left_lower_thumb
+    400046: Left_mid_point
+    400048: Left_middle_fingers
+    400050: Left_toe
+    400052: Left_upper_fingers
+    400054: Left_upper_point
+    400056: Left_upper_thumb
+    400058: Neck
+    400060: Right_ankle
+    400062: Right_arm
+    400064: Right_clavicle
+    400066: Right_elbow
+    400068: Right_feet
+    400070: Right_hand
+    400072: Right_knee
+    400074: Right_leg
+    400076: Right_lower_fingers
+    400078: Right_lower_point
+    400080: Right_lower_thumb
+    400082: Right_mid_point
+    400084: Right_middle_fingers
+    400086: Right_toe
+    400088: Right_upper_fingers
+    400090: Right_upper_point
+    400092: Right_upper_thumb
+    400094: Root
+    400096: Skull_base
+    400098: SurfBoard
+    400100: surfboard
+    400102: toa
+    400104: Torso
+    400106: Tummy
+    4300000: SurfBoard
+    4300002: toa
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: SurfBoard
+    13700002: toa
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d78c73ae88b349b4c929331d4ca05e29, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

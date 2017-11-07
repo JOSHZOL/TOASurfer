@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: a2585502b2294b24784db53002813fe1
+timeCreated: 1510088850
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bottom_fin_1
+    100002: Bottom_fin_2
+    100004: Bottom_fin_tip
+    100006: Head
+    100008: Jaw
+    100010: Jaw_tip
+    100012: L_fin
+    100014: L_fin_1
+    100016: L_fin_2
+    100018: L_fin_tip
+    100020: Neck
+    100022: Nose
+    100024: R_fin
+    100026: R_fin_1
+    100028: R_fin_2
+    100030: R_fin_tip
+    100032: Root
+    100034: shark1
+    100036: Shark_fin
+    100038: Shark_fin_1
+    100040: Shark_fin_2
+    100042: Shark_fin_tip
+    100044: //RootNode
+    100046: Spine
+    100048: Spine_2
+    100050: Spine_3
+    100052: Tail
+    100054: Tail_tip
+    100056: Top_fin_1
+    100058: Top_fin_2
+    100060: Top_fin_tip
+    400000: Bottom_fin_1
+    400002: Bottom_fin_2
+    400004: Bottom_fin_tip
+    400006: Head
+    400008: Jaw
+    400010: Jaw_tip
+    400012: L_fin
+    400014: L_fin_1
+    400016: L_fin_2
+    400018: L_fin_tip
+    400020: Neck
+    400022: Nose
+    400024: R_fin
+    400026: R_fin_1
+    400028: R_fin_2
+    400030: R_fin_tip
+    400032: Root
+    400034: shark1
+    400036: Shark_fin
+    400038: Shark_fin_1
+    400040: Shark_fin_2
+    400042: Shark_fin_tip
+    400044: //RootNode
+    400046: Spine
+    400048: Spine_2
+    400050: Spine_3
+    400052: Tail
+    400054: Tail_tip
+    400056: Top_fin_1
+    400058: Top_fin_2
+    400060: Top_fin_tip
+    4300000: shark1
+    9500000: //RootNode
+    13700000: shark1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d78c73ae88b349b4c929331d4ca05e29, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

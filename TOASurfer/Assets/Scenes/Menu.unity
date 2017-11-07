@@ -160,7 +160,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 6.46, y: 3.92}
-    newSize: {x: 24.41, y: 4.96}
+    newSize: {x: 6.46, y: 3.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -216,15 +216,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 32fdf033e07a0a747be17183e7dd55f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 764a2f3a05846cd42a246bdff6ac1c29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 24.41, y: 4.96}
+  m_Size: {x: 6.46, y: 3.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &984686125
 GameObject:
@@ -292,15 +292,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2c0c4c7f01cc1904cb0c46e65a309e35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ced41c05aca263468d7b6aaa349aaa8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 24.41, y: 4.96}
+  m_Size: {x: 6.45, y: 3.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!61 &984686128
 BoxCollider2D:
@@ -319,7 +319,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 6.45, y: 3.92}
-    newSize: {x: 24.41, y: 4.96}
+    newSize: {x: 6.45, y: 3.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -406,15 +406,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d3ec786593985584a86b42769a6a9b88, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3307935c148fdf42910c70ea7e24819, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 24.41, y: 4.96}
+  m_Size: {x: 13.03, y: 3.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!61 &1287460954
 BoxCollider2D:
@@ -433,7 +433,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 13.03, y: 3.92}
-    newSize: {x: 24.41, y: 4.96}
+    newSize: {x: 13.03, y: 3.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -533,15 +533,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5dacdc3bebfe3fa42b9d30a410e54058, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84d276b2e9bd74643a05b0f12c8d675d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 24.41, y: 4.96}
+  m_Size: {x: 11.1, y: 3.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!61 &1295265678
 BoxCollider2D:
@@ -560,7 +560,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 11.1, y: 3.92}
-    newSize: {x: 24.41, y: 4.96}
+    newSize: {x: 11.1, y: 3.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -876,15 +876,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2d10ac280e07ef044ab71b3bfff365e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c1972973d90cfc49916a67a927cc0e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 24.41, y: 4.96}
+  m_Size: {x: 12.51, y: 3.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!61 &1530856599
 BoxCollider2D:
@@ -903,7 +903,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 12.51, y: 3.91}
-    newSize: {x: 24.41, y: 4.96}
+    newSize: {x: 12.51, y: 3.91}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

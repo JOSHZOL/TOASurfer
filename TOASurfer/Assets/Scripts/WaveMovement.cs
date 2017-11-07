@@ -33,7 +33,7 @@ public class WaveMovement : MonoBehaviour
         {
             Vector3 worldPos = localToWorld.MultiplyPoint3x4(vertices[i]);
 
-            vertices[i].Set(vertices[i].x, 1.55f * Mathf.Sin((Time.realtimeSinceStartup + (worldPos.z / 10)) * waveSpeed) , vertices[i].z);
+            vertices[i].Set(vertices[i].x, 1.55f * Mathf.Sin((Time.timeSinceLevelLoad + (worldPos.z / 10)) * waveSpeed) , vertices[i].z);
 
             i++;
         }
