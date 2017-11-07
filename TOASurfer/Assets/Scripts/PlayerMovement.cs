@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (restartTimer <= 0.0f)
         {
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("Menu");
         }
     }
 

@@ -6,5 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LastPick.unity
+    guid: 361196737e501c645a7dac4e9c367a97
+  - enabled: 1
     path: Assets/Scenes/Gameplay.unity
     guid: bedf4fdde6b6567469fda19753515cce
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: a3d94b4886a41474c9b8c19bf2c188db
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: ea4089d9859058e4eb577a1d8ffd5c32
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 0bebbb1cc5ff72145b060a4fac0750bb
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: e21759342e18cc148ad18623ee67658f
