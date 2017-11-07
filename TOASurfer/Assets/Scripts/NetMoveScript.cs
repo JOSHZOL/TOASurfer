@@ -15,7 +15,7 @@ public class NetMoveScript : MonoBehaviour
 
     public GameObject Player;
 
-    int lane;
+    float lane;
     int score;
 
     double SpeedMultiplier;
@@ -46,42 +46,60 @@ public class NetMoveScript : MonoBehaviour
     void Update()
     {
 
-        rb.position = new Vector3(Player.transform.position.x + (Input.GetAxis("Horizontal2") * 2.5f), rb.position.y, rb.position.z);
+        //rb.position = new Vector3( * 3), rb.position.y, rb.position.z);
 
-        //if (Input.GetButtonDown("X"))
-        //{
-        //    lane = -1;
-        //}
-        //else if (Input.GetButtonDown("A"))
-        //{
-        //    lane = 0;
-        //}
-        //else if (Input.GetButtonDown("B"))
-        //{
-        //    lane = 1;
-        //}
+        if (!Player.GetComponent<PlayerMovement>().restart)
+        {
+            lane = (Player.transform.position.x / laneWidth) + (Input.GetAxis("Horizontal2"));
 
-        //// Slow on Arrival to lane
+            if (lane > 1)
+            {
+                lane = 1;
+            }
+            else if (lane < -1)
+            {
+                lane = -1;
+            }
 
-        //if (Mathf.Abs(rb.position.x - (float)(lane * laneWidth)) > ArrivalDistance)
-        //{
-        //    SpeedMultiplier = 1.0f;
-        //}
-        //else
-        //{
-        //    SpeedMultiplier = 1.0f * (Mathf.Abs(rb.position.x - (float)(lane * laneWidth)) / ArrivalDistance);
-        //}
+            //if (Input.GetButtonDown("X"))
+            //{
+            //    lane = -1;
+            //}
+            //else if (Input.GetButtonDown("A"))
+            //{
+            //    lane = 0;
+            //}
+            //else if (Input.GetButtonDown("B"))
+            //{
+            //    lane = 1;
+            //}
 
-        //// Move to lane
+            // Slow on Arrival to lane
 
-        //if ((lane * laneWidth) > rb.position.x)
-        //{
-        //    rb.position = new Vector3(rb.position.x + ((float)(NetSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
-        //}
-        //else if ((lane * laneWidth) < rb.position.x)
-        //{
-        //    rb.position = new Vector3(rb.position.x - ((float)(NetSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
-        //}
+            if (Mathf.Abs(rb.position.x - (float)(lane * laneWidth)) > ArrivalDistance)
+            {
+                SpeedMultiplier = 1.0f;
+            }
+            else
+            {
+                SpeedMultiplier = 1.0f * (Mathf.Abs(rb.position.x - (float)(lane * laneWidth)) / ArrivalDistance);
+            }
+
+            // Move to lane
+
+            if ((lane * laneWidth) > rb.position.x)
+            {
+                rb.position = new Vector3(rb.position.x + ((float)(NetSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
+            }
+            else if ((lane * laneWidth) < rb.position.x)
+            {
+                rb.position = new Vector3(rb.position.x - ((float)(NetSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
+            }
+        }
+        else
+        {
+            rb.position = new Vector3(rb.position.x, rb.position.y, rb.position.z - (5 * Time.deltaTime));
+        }
 
         // Change height for wave motion
 

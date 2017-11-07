@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     Animator ani;
 
     int lane;
-    bool restart = false;
+    public bool restart = false;
     float restartTimer = 5.0f;
 
     double SpeedMultiplier;
@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animationPlay = false;
             ani.SetBool("Right", false);
+            ani.SetBool("Left", false);
         }
            
         if (!restart)
@@ -64,6 +65,10 @@ public class PlayerMovement : MonoBehaviour
             else if (previousXAxis == 0.0f && Input.GetAxis("Horizontal") < 0.0f && lane != -1)
             {
                 lane--;
+
+                animationPlay = true;
+                animationTimer = 0.3f;
+                ani.SetBool("Left", true);
             }
 
             previousXAxis = Input.GetAxis("Horizontal");
