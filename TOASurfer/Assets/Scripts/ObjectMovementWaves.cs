@@ -9,6 +9,8 @@ public class ObjectMovementWaves : MonoBehaviour {
 
     public float offset;
 
+    public float waveSize = 1.55f;
+
     Rigidbody rb;
 
     // Use this for initialization
@@ -22,7 +24,7 @@ public class ObjectMovementWaves : MonoBehaviour {
     {
         rb.position = new Vector3(rb.position.x, rb.position.y, rb.position.z + (ObjectSpeed * Time.deltaTime));
 
-        rb.position = new Vector3(rb.position.x, 1.55f * Mathf.Sin((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) + offset, rb.position.z);
+        rb.position = new Vector3(rb.position.x, waveSize * Mathf.Sin((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) + offset, rb.position.z);
 
         if (rb.position.z < -5)
         {

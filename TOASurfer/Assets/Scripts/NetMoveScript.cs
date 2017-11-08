@@ -103,7 +103,7 @@ public class NetMoveScript : MonoBehaviour
 
         // Change height for wave motion
 
-        rb.position = new Vector3(rb.position.x, 1.55f * Mathf.Sin((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) - 1, rb.position.z);
+        rb.position = new Vector3(rb.position.x, 1.55f * Mathf.Sin((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) - 1.2f, rb.position.z);
     }
 
 }
