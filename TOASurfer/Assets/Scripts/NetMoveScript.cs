@@ -15,6 +15,8 @@ public class NetMoveScript : MonoBehaviour
 
     public GameObject Player;
 
+    Quaternion Rotation;
+
     float lane;
     int score;
 
@@ -104,6 +106,10 @@ public class NetMoveScript : MonoBehaviour
         // Change height for wave motion
 
         rb.position = new Vector3(rb.position.x, 1.55f * Mathf.Sin((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) - 1.2f, rb.position.z);
+
+        Rotation.eulerAngles = new Vector3(0, Input.GetAxis("Horizontal2") * -25, 0);
+
+        rb.rotation = Rotation;
     }
 
 }
