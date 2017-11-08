@@ -14,6 +14,7 @@ public class NetMoveScript : MonoBehaviour
     Rigidbody rb;
 
     public GameObject Player;
+    public GameObject spiritBall;
 
     Quaternion Rotation;
 
@@ -43,6 +44,8 @@ public class NetMoveScript : MonoBehaviour
             SceneManager.LoadScene("Gameplay");
         }
     }
+
+    
 
     // Update is called once per frame
     void Update()
@@ -84,6 +87,8 @@ public class NetMoveScript : MonoBehaviour
             {
                 rb.position = new Vector3(rb.position.x - ((float)(NetSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
             }
+
+            spiritBall.transform.localScale = new Vector3(score, score, score);
         }
         else
         {
