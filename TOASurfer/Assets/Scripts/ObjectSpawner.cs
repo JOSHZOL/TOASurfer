@@ -15,7 +15,7 @@ public class ObjectSpawner : MonoBehaviour {
         for (int i = 0; i < 5; i++)
         {
             var newObject = Instantiate(floatingObject);
-            newObject.transform.position = new Vector3(Random.Range(-1, 2) * 3, -3, 40 + (i * 5));
+            newObject.transform.position = new Vector3(Random.Range(-1, 2) * 3, -3, 15 + (i * 5));
         }
     }
 	
@@ -30,7 +30,7 @@ public class ObjectSpawner : MonoBehaviour {
 
             Instantiate(floatingObject);
 
-            floatingObject.transform.position = new Vector3(Random.Range(-1, 2) * 3, -3, 40 + (5 * 5));
+            floatingObject.transform.position = new Vector3(Random.Range(-1, 2) * 3, -3, 15 + (5 * 5));
         }
 	}
 }
