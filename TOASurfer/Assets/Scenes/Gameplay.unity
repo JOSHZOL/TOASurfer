@@ -1078,6 +1078,9 @@ MonoBehaviour:
   ObjectSpeed: 0
   offset: -6
   waveSize: 0.3
+  rotationMultiplier: -1
+  rotationY: 0
+  rotationZ: 0
 --- !u!54 &844867590
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -63,19 +63,6 @@ public class NetMoveScript : MonoBehaviour
                 lane = -1;
             }
 
-            //if (Input.GetButtonDown("X"))
-            //{
-            //    lane = -1;
-            //}
-            //else if (Input.GetButtonDown("A"))
-            //{
-            //    lane = 0;
-            //}
-            //else if (Input.GetButtonDown("B"))
-            //{
-            //    lane = 1;
-            //}
-
             // Slow on Arrival to lane
 
             if (Mathf.Abs(rb.position.x - (float)(lane * laneWidth)) > ArrivalDistance)
@@ -105,9 +92,9 @@ public class NetMoveScript : MonoBehaviour
 
         // Change height for wave motion
 
-        rb.position = new Vector3(rb.position.x, 1.55f * Mathf.Sin((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) - 1.2f, rb.position.z);
+        rb.position = new Vector3(rb.position.x, 1.55f * Mathf.Sin((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) - 1, rb.position.z);
 
-        Rotation.eulerAngles = new Vector3(0, Input.GetAxis("Horizontal2") * -25, 0);
+        Rotation.eulerAngles = new Vector3(Mathf.Cos((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) * -20, Input.GetAxis("Horizontal2") * -25, 0);
 
         rb.rotation = Rotation;
     }
