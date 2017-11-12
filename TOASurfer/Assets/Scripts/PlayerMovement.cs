@@ -50,6 +50,9 @@ public class PlayerMovement : MonoBehaviour
             animationPlay = false;
             ani.SetBool("Right", false);
             ani.SetBool("Left", false);
+
+            float positionOfAni = (Time.timeSinceLevelLoad / 2) - (int)(Time.timeSinceLevelLoad / 2);
+            ani.Play("Idle", -1, positionOfAni);
         }
            
         if (!restart)
