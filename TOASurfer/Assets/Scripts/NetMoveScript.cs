@@ -56,12 +56,7 @@ public class NetMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-      
-
-            //rb.position = new Vector3( * 3), rb.position.y, rb.position.z);
-
-            if (!Player.GetComponent<PlayerMovement>().restart)
+        if (!Player.GetComponent<PlayerMovement>().restart)
         {
             lane = (Player.transform.position.x / laneWidth) + (Input.GetAxis("Horizontal2"));
 
@@ -96,7 +91,7 @@ public class NetMoveScript : MonoBehaviour
                 rb.position = new Vector3(rb.position.x - ((float)(NetSpeed * SpeedMultiplier) * Time.deltaTime), rb.position.y, rb.position.z);
             }
 
-            spiritBall.transform.localScale = new Vector3(score, score, score);
+            spiritBall.transform.localScale = new Vector3(score * 2, score * 2, score * 2);
         }
         else
         {
