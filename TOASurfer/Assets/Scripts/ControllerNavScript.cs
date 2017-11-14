@@ -35,7 +35,7 @@ public class ControllerNavScript : MonoBehaviour {
 
         if (index == 1)
         {
-            if (Input.GetButtonDown("A"))
+            if (Input.GetButtonDown("A") || Input.GetKeyDown("space"))
             {
                 SceneManager.LoadScene("Gameplay");
             }
@@ -44,7 +44,7 @@ public class ControllerNavScript : MonoBehaviour {
         }
         else if (index == 2)
         {
-            if (Input.GetButtonDown("A"))
+            if (Input.GetButtonDown("A") || Input.GetKeyDown("space"))
             {
                 SceneManager.LoadScene("Tutorial");
             }
@@ -54,7 +54,7 @@ public class ControllerNavScript : MonoBehaviour {
         }
         else if (index == 3)
         {
-            if (Input.GetButtonDown("A"))
+            if (Input.GetButtonDown("A") || Input.GetKeyDown("space"))
             {
                 SceneManager.LoadScene("Settings");
             }
@@ -65,7 +65,7 @@ public class ControllerNavScript : MonoBehaviour {
         }
         else if (index == 4)
         {
-            if (Input.GetButtonDown("A"))
+            if (Input.GetButtonDown("A") || Input.GetKeyDown("space"))
             {
                 SceneManager.LoadScene("Credits");
             }
@@ -75,7 +75,7 @@ public class ControllerNavScript : MonoBehaviour {
         }
         else if (index == 5)
         {
-            if (Input.GetButtonDown("A"))
+            if (Input.GetButtonDown("A") || Input.GetKeyDown("space"))
             {
                 Application.Quit();
             }

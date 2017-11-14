@@ -16,6 +16,8 @@ public class NetMoveScript : MonoBehaviour
     public GameObject Player;
     public GameObject spiritBall;
 
+    public ParticleSystem particles;
+
     Quaternion Rotation;
 
     float lane;
@@ -37,6 +39,8 @@ public class NetMoveScript : MonoBehaviour
         {
             score += 1;
             Destroy(collision.gameObject);
+
+            particles.Play();
         }
         else if (collision.gameObject.tag == "Shark")
         {
