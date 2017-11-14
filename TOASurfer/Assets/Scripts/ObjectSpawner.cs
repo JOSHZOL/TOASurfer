@@ -7,16 +7,14 @@ public class ObjectSpawner : MonoBehaviour {
     public float spawnDelay;
     public GameObject floatingObject;
 
+    public GameObject Shark;
+
     float spawnTimer;
 
 	// Use this for initialization
 	void Start ()
     {
-        for (int i = 0; i < 5; i++)
-        {
-            var newObject = Instantiate(floatingObject);
-            newObject.transform.position = new Vector3(Random.Range(-1, 2) * 3, -3, 15 + (i * 5));
-        }
+
     }
 	
 	// Update is called once per frame
@@ -24,13 +22,13 @@ public class ObjectSpawner : MonoBehaviour {
     {
         spawnTimer -= Time.deltaTime;
 
-        if (spawnTimer <= 0)
+        if (spawnTimer <= 0 && Shark.GetComponent<SharkScript>().StartGame)
         {
             spawnTimer = spawnDelay;
 
             Instantiate(floatingObject);
 
-            floatingObject.transform.position = new Vector3(Random.Range(-1, 2) * 3, -3, 15 + (5 * 5));
+            floatingObject.transform.position = new Vector3(Random.Range(-1, 2) * 3, -3, Shark.GetComponent<Rigidbody>().position.z - 5);
         }
 	}
 }

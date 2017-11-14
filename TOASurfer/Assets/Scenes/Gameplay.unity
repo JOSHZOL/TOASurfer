@@ -3688,6 +3688,7 @@ GameObject:
   - component: {fileID: 712045972}
   - component: {fileID: 712045977}
   - component: {fileID: 712045978}
+  - component: {fileID: 712045976}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -3755,7 +3756,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 712045971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.19999999, z: -2.58}
+  m_LocalPosition: {x: 0, y: -0.19999999, z: -2.58}
   m_LocalScale: {x: 0.7, y: 0.5, z: 0.7}
   m_Children:
   - {fileID: 118054064}
@@ -3766,6 +3767,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &712045976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 712045971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e347106b8cf10544a36f8986ca0c0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectSpeed: 6
+  Offset: 30
 --- !u!54 &712045977
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4020,7 +4034,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: -2
+  StartGame: 0
   net: {fileID: 712045971}
+--- !u!114 &844867593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844867586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e347106b8cf10544a36f8986ca0c0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectSpeed: 10
+  Offset: 60
 --- !u!1 &859622625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4066,7 +4094,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400044, guid: a2585502b2294b24784db53002813fe1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 61.91
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 400044, guid: a2585502b2294b24784db53002813fe1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4110,6 +4138,10 @@ Prefab:
       objectReference: {fileID: 9100000, guid: 436a2d94418c65746ac8ef37f7337053, type: 2}
     - target: {fileID: 100044, guid: a2585502b2294b24784db53002813fe1, type: 3}
       propertyPath: m_TagString
+      value: Shark
+      objectReference: {fileID: 0}
+    - target: {fileID: 100044, guid: a2585502b2294b24784db53002813fe1, type: 3}
+      propertyPath: m_Name
       value: Shark
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4816,6 +4848,7 @@ MonoBehaviour:
   spawnDelay: 1
   floatingObject: {fileID: 1464338686601626, guid: 6e858547bac266f43a3637ffd04c2907,
     type: 2}
+  Shark: {fileID: 844867586}
 --- !u!1 &1288750175
 GameObject:
   m_ObjectHideFlags: 0
@@ -11829,6 +11862,7 @@ GameObject:
   - component: {fileID: 1698164852}
   - component: {fileID: 1698164856}
   - component: {fileID: 1698164855}
+  - component: {fileID: 1698164851}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -11836,6 +11870,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1698164851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698164850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e347106b8cf10544a36f8986ca0c0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectSpeed: 6
+  Offset: 30
 --- !u!65 &1698164852
 BoxCollider:
   m_ObjectHideFlags: 0

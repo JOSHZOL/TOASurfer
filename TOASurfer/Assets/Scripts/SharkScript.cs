@@ -8,18 +8,25 @@ public class SharkScript : MonoBehaviour {
     float Origin;
     public float Speed;
 
+    public bool StartGame = false;
+
     Rigidbody rb;
     public GameObject net;
 
     // Use this for initialization
     void Start () {
         rb = gameObject.GetComponent<Rigidbody>();
-        Origin = rb.position.z;
+        Origin = 62;
     }
 	
 	// Update is called once per frame
 	void Update () {
         PlayerScore = net.GetComponent<NetMoveScript>().score;
+
+        if (rb.position.z >= 50)
+        {
+            StartGame = true;
+        }
 
         if (rb.position.z > Origin - (PlayerScore * 0.76))
         {
