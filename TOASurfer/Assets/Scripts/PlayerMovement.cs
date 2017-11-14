@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     public bool restart = false;
     float restartTimer = 5.0f;
 
+    bool pause;
+
     double SpeedMultiplier;
     float previousXAxis;
 
@@ -116,6 +118,18 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene("Gameplay");
         }
+
+        if ((Input.GetKeyDown("p") || Input.GetButtonDown("Pause")) && !pause)
+        {
+            Time.timeScale = 0.0f;
+            pause = true;
+        }
+        else if((Input.GetKeyDown("p") || Input.GetButtonDown("Pause")) && pause)
+        {
+            Time.timeScale = 1.0f;
+            pause = false;
+        }
+
     }
 
     void OnCollisionEnter(Collision col)
