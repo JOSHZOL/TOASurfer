@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public float waveSpeed;
     public int laneWidth;
 
+    public bool Gameplay;
+
     Rigidbody rb;
     Animator ani;
 
@@ -57,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
            
         if (!restart)
         {
-            if (previousXAxis == 0.0f && Input.GetAxis("Horizontal") > 0.0f && lane != 1)
+            if (previousXAxis == 0.0f && Input.GetAxis("Horizontal") > 0.0f && lane != 1 && Gameplay)
             {
                 lane++;
 
@@ -65,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
                 animationTimer = 0.3f;
                 ani.SetBool("Right", true);
             }
-            else if (previousXAxis == 0.0f && Input.GetAxis("Horizontal") < 0.0f && lane != -1)
+            else if (previousXAxis == 0.0f && Input.GetAxis("Horizontal") < 0.0f && lane != -1 && Gameplay)
             {
                 lane--;
 
