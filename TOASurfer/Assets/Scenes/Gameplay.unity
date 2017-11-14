@@ -3755,7 +3755,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 712045971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.19999999, z: -2.08}
+  m_LocalPosition: {x: 0.03, y: -0.19999999, z: -2.58}
   m_LocalScale: {x: 0.7, y: 0.5, z: 0.7}
   m_Children:
   - {fileID: 118054064}
@@ -3798,6 +3798,7 @@ MonoBehaviour:
   laneWidth: 3
   Player: {fileID: 1698164850}
   spiritBall: {fileID: 118054063}
+  score: 0
 --- !u!1 &758740885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3979,6 +3980,7 @@ MonoBehaviour:
   rotationMultiplier: -2
   rotationY: 0
   rotationZ: 0
+  net: {fileID: 712045971}
 --- !u!54 &844867590
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3994,6 +3996,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &844867591
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844867586}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.006271, y: 4.523008, z: 0.83535004}
+  m_Center: {x: -0.59676695, y: 1.7615039, z: -8.302475}
+--- !u!114 &844867592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844867586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f26a558b89e50d44906fb7193aad018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: -2
+  net: {fileID: 712045971}
 --- !u!1 &859622625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,7 +4066,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400044, guid: a2585502b2294b24784db53002813fe1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.1
+      value: 61.91
       objectReference: {fileID: 0}
     - target: {fileID: 400044, guid: a2585502b2294b24784db53002813fe1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4081,6 +4108,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 436a2d94418c65746ac8ef37f7337053, type: 2}
+    - target: {fileID: 100044, guid: a2585502b2294b24784db53002813fe1, type: 3}
+      propertyPath: m_TagString
+      value: Shark
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2585502b2294b24784db53002813fe1, type: 3}
   m_IsPrefabParent: 0

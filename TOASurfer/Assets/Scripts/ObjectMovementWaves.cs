@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ObjectMovementWaves : MonoBehaviour {
 
+    int PlayerScore;
+
     public float waveSpeed;
     public float ObjectSpeed;
     public float offset;
@@ -13,7 +15,7 @@ public class ObjectMovementWaves : MonoBehaviour {
     public float rotationZ = 0;
 
     Rigidbody rb;
-
+    public GameObject net;
     Quaternion Rotation;
 
     // Use this for initialization
@@ -25,6 +27,8 @@ public class ObjectMovementWaves : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        //PlayerScore = net.GetComponent<NetMoveScript>().score;
+
         rb.position = new Vector3(rb.position.x, rb.position.y, rb.position.z + (ObjectSpeed * Time.deltaTime));
 
         rb.position = new Vector3(rb.position.x, waveSize * Mathf.Sin((Time.timeSinceLevelLoad + (rb.position.z / 10)) * waveSpeed) + offset, rb.position.z);

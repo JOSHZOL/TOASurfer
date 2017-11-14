@@ -19,7 +19,7 @@ public class NetMoveScript : MonoBehaviour
     Quaternion Rotation;
 
     float lane;
-    int score;
+    public int score;
 
     double SpeedMultiplier;
 
@@ -38,6 +38,11 @@ public class NetMoveScript : MonoBehaviour
             score += 1;
             Destroy(collision.gameObject);
         }
+        else if (collision.gameObject.tag == "Shark")
+        {
+            // Victory Screen
+            SceneManager.LoadScene("Menu");
+        }
         else
         {
             // die
@@ -45,15 +50,18 @@ public class NetMoveScript : MonoBehaviour
         }
     }
 
+
     
 
     // Update is called once per frame
     void Update()
     {
 
-        //rb.position = new Vector3( * 3), rb.position.y, rb.position.z);
+      
 
-        if (!Player.GetComponent<PlayerMovement>().restart)
+            //rb.position = new Vector3( * 3), rb.position.y, rb.position.z);
+
+            if (!Player.GetComponent<PlayerMovement>().restart)
         {
             lane = (Player.transform.position.x / laneWidth) + (Input.GetAxis("Horizontal2"));
 
