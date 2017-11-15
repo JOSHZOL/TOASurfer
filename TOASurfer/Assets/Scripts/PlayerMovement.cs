@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     Animator ani;
 
+    public GameObject Canvus;
+
     int lane;
     public bool restart = false;
     float restartTimer = 5.0f;
@@ -35,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody>();
 
         ani = gameObject.GetComponentInChildren<Animator>();
+
+        if (Gameplay)
+        Canvus.SetActive(false);
 
         lane = 0;
     }
@@ -119,15 +124,25 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene("Gameplay");
         }
 
-        if ((Input.GetKeyDown("p") || Input.GetButtonDown("Pause")) && !pause)
+        if ((Input.GetKeyDown("p") || Input.GetButtonDown("Pause")) && !pause && Gameplay)
         {
+            Canvus.SetActive(true);
+
             Time.timeScale = 0.0f;
             pause = true;
         }
-        else if((Input.GetKeyDown("p") || Input.GetButtonDown("Pause")) && pause)
+        else if((Input.GetKeyDown("p") || Input.GetButtonDown("Pause")) && pause && Gameplay)
         {
+            Canvus.SetActive(false);
+
             Time.timeScale = 1.0f;
             pause = false;
+        }
+
+        if (pause && Input.GetButtonDown("A") && Gameplay)
+        {
+            Time.timeScale = 1.0f;
+            SceneManager.LoadScene("Menu");
         }
 
     }
