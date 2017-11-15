@@ -7,39 +7,26 @@ public class QuitButton : MonoBehaviour {
     public Sprite Highlighted;
     public Sprite Unhighlighted;
     public int Selected = 0;
-    SpriteRenderer spSpriteRenderer;
+    SpriteRenderer srSpriteRenderer;
 
 	// Use this for initialization
 	void Start () {
-        spSpriteRenderer = GetComponent<SpriteRenderer>();
-        spSpriteRenderer.sprite = Unhighlighted;
+        srSpriteRenderer = GetComponent<SpriteRenderer>();
+        srSpriteRenderer.sprite = Unhighlighted;
     }
 	
 	// Update is called once per frame
-	void Update () {
-
-		if (Selected == 0)
+	void Update ()
+    {
+        if (Selected == 0)
         {
-            spSpriteRenderer.sprite = Unhighlighted;
+            srSpriteRenderer.sprite = Unhighlighted;
+            transform.localScale = new Vector3(0.24f, 0.24f, 0.24f);
         }
         else
         {
-            spSpriteRenderer.sprite = Highlighted;
+            srSpriteRenderer.sprite = Highlighted;
+            transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
         }
-	}
-
-    private void OnMouseEnter()
-    {
-        spSpriteRenderer.sprite = Highlighted;
-    }
-
-    private void OnMouseExit()
-    {
-        spSpriteRenderer.sprite = Unhighlighted;
-    }
-
-    private void OnMouseDown()
-    {
-        Application.Quit();
     }
 }

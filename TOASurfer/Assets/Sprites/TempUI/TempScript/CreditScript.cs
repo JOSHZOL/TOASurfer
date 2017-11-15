@@ -21,29 +21,15 @@ public class CreditScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         
-		if (Selected == 0)
+        if (Selected == 0)
         {
             srSpriteRenderer.sprite = Unhighlighted;
+            transform.localScale = new Vector3(0.24f, 0.24f, 0.24f);
         }
         else
         {
             srSpriteRenderer.sprite = Highlighted;
+            transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
         }
-    }
-
-    private void OnMouseEnter()
-    {
-        srSpriteRenderer.sprite = Highlighted;
-    }
-
-    private void OnMouseExit()
-    {
-        srSpriteRenderer.sprite = Unhighlighted;
-    }
-
-    private void OnMouseDown()
-    {
-        SceneManager.LoadScene("Credits");
     }
 }
