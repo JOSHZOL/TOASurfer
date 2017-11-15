@@ -45,12 +45,7 @@ public class NetMoveScript : MonoBehaviour
         else if (collision.gameObject.tag == "Shark")
         {
             // Victory Screen
-            SceneManager.LoadScene("Menu");
-        }
-        else
-        {
-            // die
-            SceneManager.LoadScene("Gameplay");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
