@@ -15,7 +15,7 @@ public class GotoMenu : MonoBehaviour {
 	void Update () {
         fDelay += Time.deltaTime;
 
-        if (fDelay > 8.5f)
+        if (fDelay > 8.0f)
         {
             SceneManager.LoadScene("Menu");
         }
